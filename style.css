@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 17fr minmax(0, 66fr) 17fr;
+    grid-template-rows: 25px 135px 50px 30px minmax(500px, auto) 30px 100px;
+    grid-template-areas: 
+        '     .       .      admin'
+        '   header  header  header'
+        '    nav      nav     nav '
+        '     .        .       .  '
+        '     a      main      b  '
+        '     .        .       .  '
+        '   footer  footer  footer';
+        max-width: 96%;
+        min-height: 100vh;
+        margin: 0 auto;
+}
+.admin {
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    grid-area: admin;
+}
+.header {
+    grid-area: header;
+    align-self: center;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid gray;
+}
+.header-logo-grid {
+    display: grid;
+    grid-template-columns: 17fr 66fr 17fr;
+    grid-template-rows: 125px;
+    grid-template-areas: 
+        'logo main link';
+    
+}
+.logo {
+    grid-area: logo;
+}
+.header-main {
+    align-self: center;
+    grid-area: main;
+    text-decoration: none;
+}
+.blink {
+    grid-area: link;
+}
+img {
+    width: auto;
+    height: auto;
+}
+.main-text {
+    color: black;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 50px;
+    font-weight: lighter;
+    padding-top: 27px;
+    
+}
+.navgt {
+    grid-area: nav;
+    align-self: center;
+}
+.menu-flex {
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+.aside {
+    grid-area: a;
+    border-right: 1.5px solid black;
+}
+.main {
+    grid-area: main;
+}
+.bside {
+    grid-area: b;
+    border-left: 1.5px solid black;
+}
+.footer {
+    grid-area: footer;
+    border-top: 1.5px solid black;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 17fr 66fr 17fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+        'util copr etc';
+    
+}
+.util-link {
+    grid-area: util;
+    /* background-color: teal;*/
+}
+.copyright {
+    grid-area: copr;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    padding-top: 13px;
+}
+.etc {
+    grid-area: etc;
+    /* background-color: tomato; */
+}
+body {
+    text-align: center;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
