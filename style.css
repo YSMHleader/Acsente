@@ -31,7 +31,7 @@
 }
 .admin {
     text-align: right;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'GmarketSansMedium', '300';
     grid-area: admin;
 }
 .header {
@@ -82,6 +82,7 @@ img {
     align-items: center;
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
+    font-family: 'GmarketSansMedium', '300';
 }
 .aside {
     grid-area: a;
@@ -111,6 +112,17 @@ img {
     margin-bottom: 1rem;
     background-color: black;
     color: white;
+}
+.news {
+    font-family: 'GmarketSansMedium', '300';
+    text-align: justify;
+    word-break: break-all;
+    width: 96%;
+}
+.news_section_title {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    width: 99%;
 }
 .main {
     grid-area: main;
@@ -147,6 +159,7 @@ img {
 body {
     text-align: center;
     margin: 0;
+    background-color: #F8FBFE;
 }
 a {
     text-decoration: none;
