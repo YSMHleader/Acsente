@@ -16,7 +16,7 @@
 .container {
     display: grid;
     grid-template-columns: 17fr minmax(0, 66fr) 17fr;
-    grid-template-rows: 25px 135px 50px 30px minmax(500px, auto) 30px 100px;
+    grid-template-rows: 10px 135px 50px 600px minmax(300px, auto) 30px 100px;
     grid-template-areas: 
         '     .       .      admin'
         '   header  header  header'
@@ -37,12 +37,10 @@
 .header {
     grid-area: header;
     align-self: center;
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid gray;
 }
 .header-logo-grid {
     display: grid;
-    grid-template-columns: 17fr 66fr 17fr;
+    grid-template-columns: 1fr 10fr 7fr;
     grid-template-rows: 125px;
     grid-template-areas: 
         'logo main link';
@@ -50,12 +48,17 @@
 }
 .logo {
     grid-area: logo;
+    width: 90px;
 }
 .header-main {
     align-self: center;
     grid-area: main;
     text-decoration: none;
+<<<<<<< HEAD
     letter-spacing: 3px;
+=======
+    letter-spacing: 10px;
+>>>>>>> 22873de07a135f7c0e4f361af8e6bf59f56d5427
 }
 .blank {
     grid-area: link;
@@ -65,24 +68,29 @@ img {
     height: auto;
 }
 .main-text {
-    color: black;
     font-family: 'GangwonEduPowerExtraBoldA';
-    font-size: 50px;
+    font-size: 25px;
     font-weight: lighter;
-    padding-top: 27px;
-    
+    padding-top: 0px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    color: #6996FE;
+}
+.spccolor {
+    color: #6996FE;
 }
 .navgt {
     grid-area: nav;
     align-self: center;
+    justify-items: flex-end;
 }
 .menu-flex {
     display: flex;
+    width: 90%;
     height: 40px;
+    margin-top: 12px;
     justify-content: space-around;
     align-items: center;
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
     font-family: 'GmarketSansMedium', '300';
 }
 .aside {
@@ -123,8 +131,13 @@ img {
 .news_section_title {
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
+<<<<<<< HEAD
     padding-top: 5px;
     padding-bottom: 5px;
+=======
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+>>>>>>> 22873de07a135f7c0e4f361af8e6bf59f56d5427
     width: 99%;
 }
 .main {
@@ -137,6 +150,7 @@ img {
 .footer {
     grid-area: footer;
     border-top: 1.5px solid black;
+    text-align: center;
 }
 .footer-grid {
     display: grid;
@@ -160,9 +174,8 @@ img {
     /* background-color: tomato; */
 }
 body {
-    text-align: center;
     margin: 0;
-    background-color: #F8FBFE;
+    background-color: #fefdfb;
 }
 a {
     text-decoration: none;
