@@ -10,7 +10,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+html {
+    font-size: 100%;
+}
 body {
     margin-top: 2.3vh;
 }
@@ -50,7 +52,7 @@ body {
     grid-area: title;
     font-family: 'GangwonEduPowerExtraBoldA';
     font-weight: lighter;
-    font-size: 0.75rem;
+    font-size: 0.81rem;
     letter-spacing: 0.97rem;
     margin-left: 1.4vw;
 }
@@ -76,14 +78,17 @@ a {
     height: 78.9vh;
 }
 .aside {
+    display: grid;
     grid-area: a;
     background-color: blueviolet;
 }
 .bside {
+    display: grid;
     grid-area: b;
     background-color: red;
 }
 .footer {
+    display: grid;
     grid-area: foot;
     background-color: teal;
 }
