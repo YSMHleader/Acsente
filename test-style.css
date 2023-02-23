@@ -19,7 +19,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw; 
-    grid-template-rows: 13vh 8.1vh 78.9vh 78.9vh 21.1vh;
+    grid-template-rows: 13vh 8.1vh 78.9vh 80.9vh 19.1vh;
     grid-template-areas: 
         ' head head head head '
         '   .   .    .    .   '
@@ -33,10 +33,10 @@ body {
 }
 .container-head {
     display: grid;
-    grid-template-columns: 6.3vw 50.1vw 7.3vw 36.3vw;
+    grid-template-columns: 6.3vw 40.1vw 4vw 46.3vw 3.3vw;
     grid-template-rows: 13vh;
     grid-template-areas: 
-        'logo title . menu';
+        'logo title . menu .';
 }
 .logo {
     display: grid;
@@ -70,6 +70,17 @@ a {
 .menu-bar {
     display: grid;
     grid-area: menu;
+}
+.menu-bar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 11.5vw);
+    grid-template-rows: 13vh;
+    grid-template-areas: 
+        'about activity member recruit';
+    align-items: center;
+    justify-items: center;
+    font-family: 'GmarketSansMedium';
+    font-size: 0.94rem;
 }
 .main {
     grid-area: main;
