@@ -31,6 +31,9 @@ body {
 }
 .header {
     grid-area: head;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 .container-head {
     display: grid;
@@ -94,14 +97,16 @@ a {
     display: grid;
     grid-area: a;
     border: 1px solid black;
+    border-left: none;
 }
 .bside {
     display: grid;
     border: 1px solid black;
+    border-left: none;
     grid-area: b;
 }
 .footer {
     display: grid;
-    border: 1px solid black;
+    border-top: 1px solid black;
     grid-area: foot;
 }
