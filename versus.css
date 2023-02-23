@@ -20,11 +20,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw; 
-    grid-template-rows: 13vh 8.1vh 78.9vh 80.9vh 19.1vh;
+    grid-template-rows: 13vh 8.1vh 78.9vh 13.8vh 74.2vh 12vh;
     grid-template-areas: 
         ' head head head head '
         '   .   .    .    .   '
         ' main main main main '
+        '   .   .    .    .   '
         '   a   a    b    b   '
         ' foot foot foot foot ';
         
