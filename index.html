@@ -2,49 +2,76 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2"/> 
-        <title>레이아웃 테스트 페이지</title>
-        <link rel="stylesheet" href="versus.css">
+        <title>Welcome to Acsente</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
+            <div class="clock">00:00:00</div>
             <div class="header">
-                <div class="container-head">
-                    <div class="logo">
-                        <img src="colorlogoorigin.png" id="logo">
-                    </div>
-                    <div class="head-text">
-                        <h1 id="adj-title"><a href="index-new-layout.html">연세대학교 <span id="realtitle">목하회</span></a></h1>
-                    </div>
-                    <div class="menu-bar">
-                        <div class="menu-bar-grid">
-                            <div class="menu-about"><a href="">About Mokha</a></div>
-                            <div class="menu-act"><a href="">Activity</a></div>
-                            <div class="menu-mem"><a href="">Member</a></div>
-                            <div class="menu-recru"><a href="">Recruiting</a></div>
-                        </div>
-                    </div>
+                <div class="header-logo-grid">
+                    <div class="logo"><img src="nobackgroundlogo.png"></div>
+                    <div class="header-main"><h1 class="main-text"><a href="index.html">Acsente</a></h1></div>
+                    <div class="blank"><h2>(서비스 준비중)</h2></div>
                 </div>
             </div>
-            <div class="main">
-                <div align="center">
-                    <iframe src="https://www.youtube.com/embed/8W2eENLTizw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="main-video"></iframe>
+            <div class="navgt">
+                <div class="menu-flex">
+                    <div class="menu"><a href="">About Acsente</a></div>
+                    <div class="menu"><a href="">Activity</a></div>
+                    <div class="menu"><a href="">Member</a></div>
+                    <div class="menu"><a href="">Recruiting</a></div>
                 </div>
             </div>
             <div class="aside">
-                <article>
-                    <h1>목하의 추천 컨텐츠</h1>
-                    <ul>
-                        <li>인문독서토론</li>
-                        <li>인문독서토론</li>
-                        <li>인문독서토론</li>
-                        <li>인문독서토론</li>
-                        <li>인문독서토론</li>
-                    </ul>
-                </article>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.instagram.com/yonsei_mokha/" class="link-social-facebook" target="_blank">페이스북 악센테 -></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mokha.org/" class="link-social-instagram" target="_blank">인스타그램 악센테 -></a>
+                    </li>
+                </ul>
+                <section class="news">
+                    <h3 class="news_section_title">따끈한 뉴우스</h3>
+                    <div class="news">
+                        <div class="first-news">
+                            <h2>
+                                <a href="">뉴스뉴진스</a>
+                            </h2>
+                        </div>
+                        <div class="first-news-content">
+                            <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae exercitationem eligendi fugit dignissimos corrupti. Esse ex, laborum mollitia asperiores deleniti odio magnam, itaque aspernatur obcaecati quos laboriosam omnis iure!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae exercitationem eligendi fugit dignissimos corrupti. Esse ex, laborum mollitia asperiores deleniti odio magnam, itaque aspernatur obcaecati quos laboriosam omnis iure!</a>
+                        </div>
+                        <div class="second-news">
+                            <h2>
+                                <a href="">뉴진스뉴스</a>
+                            </h2>
+                        </div>
+                        <div class="second-news-content">
+                            <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae exercitationem eligendi fugit dignissimos corrupti. Esse ex, laborum mollitia asperiores deleniti odio magnam, itaque aspernatur obcaecati quos laboriosam omnis iure!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae exercitationem eligendi fugit dignissimos corrupti. Esse ex, laborum mollitia asperiores deleniti odio magnam, itaque aspernatur obcaecati quos laboriosam omnis iure!</a>
+                        </div>
+                    </div>
+                </section>
             </div>
+            <div class="main"></div>
             <div class="bside"></div>
-            <div class="footer"></div>
+            <div class="footer">
+                <div class="footer-grid">
+                    <div class="util-link"></div>
+                    <div class="copyright">
+                        <h3>Acsente</h1>
+                        <h4>사이트맵   회사소개   개인정보처리방침</h4>
+                        <p>E-mail : christinejang06@gmail.com</p>
+                        <p>오피스 : 서울 서대문구 연세로 50 </p>
+                    </div>
+                    <div class="etc"></div>
+                </div>
+            </div>
         </div>
+        <script src="clock.js"></script>
     </body>
 </html>
